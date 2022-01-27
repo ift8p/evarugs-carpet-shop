@@ -1,6 +1,7 @@
 html, body {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 }
 img {
     width: 100%;
@@ -58,7 +59,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 100%;
 }
 .main-display {
-    margin-top: 4.7rem;
+    padding-top: 4.7rem;
+}
+.main-display__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .main-display__logo {
     display: flex;
@@ -69,12 +75,60 @@ h1, h2, h3, h4, h5, h6 {
     height: 6rem;
     margin-right: 1.1rem;
 }
-.main-display__header {
+.main-display__title {
     font-style: italic;
     font-weight: 900;
     font-size: 3.6rem;
-    line-height: 42px;
+    line-height: 117%;
     text-transform: uppercase;
+}
+.main-display__nav {
+    display: flex;
+}
+.main-display__nav li {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 117%;
+}
+.main-display__nav li:not(:last-child) {
+    margin-right: 2.5rem;
+}
+.main-display__center {
+    display: flex;
+    justify-content: space-between;
+}
+.main-display__left {
+    padding-top: 19rem;
+}
+.main-display__right {
+    width: 53.3rem;
+    height: 68.6rem;
+}
+.main-display__header {
+    margin-bottom: 2rem;
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 118%;
+    margin: 0;
+}
+.main-display__subheader {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 117%;
+}
+.main-display__btn {
+    font-weight: 900;
+    font-size: 2rem;
+    color: #fff;
+    border: none;
+    line-height: 115%;
+    text-align: center;
+    padding: 1.5rem 3rem;
+    background: linear-gradient(95.2deg, #B90160 2.23%, #2E3192 99.51%);
+    border-radius: .7rem;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 .about__items {
     /*display: flex;
